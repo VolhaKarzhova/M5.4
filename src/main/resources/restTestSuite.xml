@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RestAPITest" verbose="1" parallel="tests" thread-count="5">
+    <test name="RestAPITest">
+        <classes>
+            <class name="tests.RestAssuredTest"></class>
+        </classes>
+    </test>
+</suite>
