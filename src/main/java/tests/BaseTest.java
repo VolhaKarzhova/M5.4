@@ -1,5 +1,6 @@
 package tests;
 
+import config.GlobalParameters;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.annotations.BeforeTest;
@@ -12,7 +13,7 @@ public class BaseTest {
 
     @BeforeTest
     public void initTest() {
-        RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
-        response = given().get("/users").andReturn();
+        RestAssured.baseURI = GlobalParameters.MAIN_URI;
+        response = given().get(GlobalParameters.USERS_PATH).andReturn();
     }
 }
