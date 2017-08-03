@@ -2,7 +2,8 @@
 <suite name="RestAPITest" verbose="1" parallel="tests" thread-count="5">
     <test name="RestAPITest">
         <classes>
-            <class name="tests.RestAssuredTest"></class>
+            <class name="tests.rest_assured_lib.RestAssuredTest"></class>
+            <class name="tests.apache_http_client.ApacheHttpClientTest"></class>
         </classes>
     </test>
 </suite>
